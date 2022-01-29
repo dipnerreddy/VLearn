@@ -1,0 +1,79 @@
+@import 'utilities.css';
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+   --primary:red;
+   --dark:#161616;
+   --pure:#FFFFFF;
+   --ternary:#444343;
+   --light:#F2F2F2;
+   --secondary:#070606;
+
+
+}
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   --webkit-font-smotthing:antialiased;
+
+}
+
+section{
+   padding: 3rem 3rem;
+}
+.section-heading{
+   text-decoration: underline;
+   margin-bottom: 2rem;
+}
+section.Education {
+   background: var(--light);
+}
+.card:hover{
+   box-shadow:0 0 20px 0px rgb(94, 93, 93) ;
+   padding: 3px;
+   transition: all .9s ease
+
+}
+.Name{
+   background: rgb(40, 112, 160);
+   padding:  3rem 2rem;
+   margin-bottom: 2rem;
+}
+.Name h2{
+   color: white;
+}
+/*section.Education .card-wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 2rem;
+   grid-row-gap: 2rem;
+
+}
+section.Education .card-wrapper .card{
+   background:white;
+   padding:  1rem 1rem;
+   position: relative;
+   transition: all .9s ease;
+   
+}*/
+
+section.Education .card-wrapper .card h2{
+   font-size: 1.3rem;
+   margin-bottom: 2rem;
+
+}
+section.Education .card-wrapper .card h3{
+   font-size: 1.3rem;
+   margin-bottom: 0.5rem;
+}
+section.Education .card-wrapper .card p{
+   color:var(--ternary);
+   line-height: 1.6;
+   margin-bottom: 0.5rem;
+}
