@@ -1,0 +1,31 @@
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-around;
+}
+
+.btn{
+    padding: 2px 2px;
+    font-size: 0.5rem;
+    font-family: 600;
+    border: 2px solid transparent;
+    outline:none ;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: white;
+}
+.btn-primary:hover{
+    background: transparent;
+    color: var(--primary);
+    border-color: white;
+}
+
+.flex-1{
+    flex: 1;
+}

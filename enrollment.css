@@ -1,0 +1,554 @@
+
+*{
+    font-family:'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+body{
+    height: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    padding: 0.5rem 5%;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+    background-color: black;
+    color: white;
+}
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+}
+header .logo .logo-img{
+    height: 40px;
+    width: 50px;
+}
+
+
+/* header .navbar{
+    position: fixed;
+    top: -120%;left: 0;
+    width: 100%;
+    background: #444;
+} */
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;   
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+header .navbar ul li a .active,
+header .navbar ul li a:hover{
+    color: crimson;
+}
+
+header #login-btn{
+    font-size: 2rem;
+    color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+}
+header .box{
+    width: 80px;
+    margin: 0px;
+    padding: 0px;
+    background-color: crimson;
+    border-radius: 10px;
+    /* border-style:solid; */
+}
+header #login-btn a{
+    color: white;
+    justify-content: center;
+    /* margin-left: 8px; */
+}
+header #login-btn:hover a{
+    color: black
+}
+header #menu{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+#about-home{
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(./UI\ banner.jfif);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#about-home h2{
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+#about-home p{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+#course-details{
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-start;
+    padding: 5vw;
+    margin: 5px;
+}
+#course-details .overwiew{
+    width: 65%;
+}
+#course-details .overwiew .course-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+#course-details .overwiew .play-btn{
+    border-radius: 50%;
+}
+#course-details .overwiew .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-details .overwiew .course-head .c-name{
+    width: 70%;
+}
+#course-details .overwiew .course-head .c-name h2{
+    color: #293038;
+}
+#course-details .overwiew .course-head .c-name .star{
+    margin: 6px 0;
+
+}
+#course-details .overwiew .course-head .c-name .star i{
+    color:black;
+    font-size: 0.9rem; 
+}
+#course-details .overwiew .course-head .c-name p{
+    font-size: 15px;
+}
+#course-details .overwiew .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;font-weight: 700;
+    background-color:White
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+#course-details .overwiew .slide{
+    width: 700px ;
+    height: 50px;
+    background: rgb(238, 229, 229);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 50px;
+}
+#course-details .overwiew .slide p{
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0.05em;
+    font-weight:  500 bold;
+}
+#course-details .overwiew .slide .btn{
+    margin: 10px;
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+}
+#course-details .overwiew .slide a{
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+#course-details .overwiew .slide a:hover{
+    color: crimson;
+
+}
+
+
+
+
+    /* --------------------------------------------------------------------------------------------------------- */
+#course-details .overwiew .brief{
+    margin: 6px 0;
+    font-weight: 900;
+}
+#course-details .overwiew .brief h4{
+    font-size: 15px;
+}
+#course-details .overwiew .brief p{
+    font-size: 12px;
+    padding: 2px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+
+}
+#course-details .overwiew hr{
+    height: 1px;
+    background-color: #444;
+    margin-top: 40px;
+}
+#course-details .overwiew .brief p i{
+    color: brown;
+    font-weight: 700;
+    margin-right: 20px;
+}
+#course-details .overwiew .brief h3{
+    color: black;
+    font-weight: 800;
+    padding:2px;
+    font-size: 20px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+#course-details .enroll{
+    margin: 8px;
+    width: 40%;
+    padding: 0px 30px 0px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 40px 0 rgba(10, 1, 51, 0.08);
+}
+#course-details .enroll h3{
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color:black
+}
+#course-details .enroll p{
+    font-size: 20px;
+    font: bold;
+    transform:capitalize;
+    color: #444;
+    margin: 15px 0px;
+    display: flex;
+    /* flex-direction: column; */
+}
+#course-details .enroll p i{
+    color:black;
+    font-weight: bold;
+    margin: 5px;
+    margin-left: 15px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    /* text-align: center; */
+}
+
+#course-details .enroll .enroll-btn {
+    padding: 30px 0px 30px 0px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#course-details .enroll .enroll-btn a{
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 13px 45px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    background: black; 
+}
+#course-details .enroll .enroll-btn .blue{
+    font-size: 15px;
+}
+#course-details .enroll .enroll-btn .fav{
+    padding: 0px;
+    margin-left: 0px;
+    text-align: center;
+    /* background: black; */
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#course-details .enroll .enroll-btn .fav a {
+    /* left: 0px; */
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 40px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+    background: black;
+}
+
+#course-details .enroll .enroll-btn .share{
+    padding: 0px;
+    /* margin-left: 0px; */
+    text-align: center;
+    /* background: black; */
+    margin-top: 20px;
+    /* margin-top: -45px; */
+    display: flex;
+    flex-direction: column;
+}
+#course-details .enroll .enroll-btn .share a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+    background: black;
+}
+
+#course-details .enroll .enroll-btn .fav-btn:hover,
+#course-details .enroll .enroll-btn .fas:hover,
+#course-details .enroll .enroll-btn .blue:hover{
+    color:rgb(219, 243, 7);
+    cursor: pointer;
+}
+#course-details .overwiew .slide-2{
+    width: 800px;
+    height: 50px;
+    background: rgb(238, 229, 229);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 50px;
+}
+#course-details .overwiew .slide-2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none; 
+}
+#course-details .overwiew .slide-2 ul li{
+    margin: 0 2rem;
+}
+#course-details .overwiew .slide-2 ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(207, 21, 21);
+}
+#course-details .overwiew .slide-2 ul li.active a{
+    background-color: #293038;
+    color: #fff;
+
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+#course-details .overwiew .play-btn{
+    width: 60px;
+    position: absolute;
+    left: 33%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    cursor:pointer; 
+}
+
+#course-details .overwiew .video-player{
+    /* display: flex; */
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /*width: 100%;
+    max-width: 800px; */
+    margin-top: 250px ;
+
+}
+ video:focus{
+    outline: none;
+    border-radius: 10px;
+}
+/* #myVideo{
+    width: 100%;
+} */
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Media Queries */
+@media (max-width:900px){
+    html,body{
+        font-size: 55%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .logo{
+        text-align: center;
+        float: none;
+        width: 100%;
+		max-width: none;
+    }
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -120%;left: 0;
+        width: 70%;
+        background: #444;
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    header .navbar li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+    header .navbar ul li a .active,
+    header .navbar ul li a:hover{
+        color:White
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar.nav-toggle{
+        top: 6.4rem;
+    }
+    #about-home{
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+    /* section */
+    .course-head{
+        width: 200%;
+    }
+    #course-details {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        /* height: 100%; */
+    } 
+    #course-details .overwiew .course-img {
+        width: 100%;
+        height: 100%;
+        margin-top: 6rem;
+    }
+    #course-details .overwiew .play-btn {
+        width: 30px;
+        /* position:initial; */
+        height: 20px;
+        left: 28em;
+        top: 25em;        
+    }
+    .brief{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #course-details .enroll{
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #course-details .enroll p {
+        display: flex;
+        flex-direction:initial;
+    }
+    #course-details .enroll .enroll-btn{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    #course-details .enroll .fav{
+        display: flex;
+        flex-direction: column;
+        /* width: fit-content; */
+        
+    }
+    #course-details .enroll .share{
+        /* margin-right: 20px; */
+        margin-top: 0px;
+        display: flex;
+        flex-direction:column;
+    }
+    #course-details .overwiew .slide{
+        width: max-content;
+    }
+    #course-details .overwiew .slide-2,
+    #course-details .overwiew .overview-2,
+    #course-details .overwiew .brief{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #course-details .overwiew .video-player{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        /* display: none; */
+    }
+
+}

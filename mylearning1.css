@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #fff;
+    margin-bottom: 100px;
+  }
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 96px;
+    
+    margin-left: 200px;
+    align-items: center;
+  
+  color: #030303;
+  }
+  .btn ul { 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+    list-style: none; 
+    width: 500px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .btn li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  .btn a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .btn a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .btn a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+  .line {
+    border-left: 3px solid #000000;
+    height: 680px;
+    position: absolute;
+    left: 25%;
+    top:30px;
+    margin-top: 200px;
+  }
+  
+  .block {
+    position: relative;
+    top:50%;
+    left:55%;
+    transform:translate(-50%,0%);
+    margin-left: 50px;
+    width:950px;
+    height:750px;
+    padding:30px 20px;
+    background:#fff;  
+  }
+  
+  .block_size {
+    position: relative;
+    top: 10%;
+    left:46%;
+    transform:translate(-50%,-50%);
+    width:780px;
+    height:200px;
+    padding:20px 20px;
+    background:#fff;
+    border-style: outset;
+    border-width: 1px;
+    margin: 40px;
+    border-radius: 10px;
+  }
+  .block_size:hover {
+    box-shadow:5px 5px 10px 5px #ccc;
+  }
+  .head h3,
+  .head li {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .head {
+    position: relative;
+    top: 11%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:780px;
+    height:80px;
+    padding:20px 20px;
+    background:#212121;
+    color: #fff;
+    border-radius: 5px;
+    
+  }
+  .head li {
+    background-color: #E81C3C;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    left: 40%;
+    top: 20%;
+    
+  }
+  .head a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+  }
+  .head li:hover {
+    background-color: #ff5c5c;
+  }
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    
+    font-size: 30px;
+    line-height: 0px;
+    color: #FFFFFF;
+  }
+  .course {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 0px;
+    color: #000000;
+  }
+  .description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  @media screen and (max-width: 800px) {
+     body {
+      width: 100%;
+    }
+     .block {
+      top:50%;
+      left:50%;
+      transform:translate(-50%,0%);
+      width:200px;
+      height:1100px;
+    }
+    .block_size {
+      top: 10%;
+      left:40%;
+      transform:translate(-50%,-50%);
+      width:200px;
+      height:300px;
+    }
+    .head {
+      top: 0%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      width:200px;
+      height:60px;
+    }
+    .head li {
+      padding: 5px 10px;
+      left: 0%;
+      top: 80%;
+    
+    }
+    .head h3 {
+      font-size: 18px;
+    }
+    .course {
+      margin-top: 50px;
+    }
+    .line {
+      height: 1000px;
+      position: absolute;
+      left: 35%;
+      margin-top: 100px;
+  
+    }
+    h1 {
+      font-size: 40px;
+      line-height: 66px;
+      margin-left: 50px;
+  
+    }
+    .btn ul {
+      position: fixed;
+      width: 100px;
+  
+    }
+    .btn a {
+      padding: 10px 30px;
+    }
+  
+  }
+  
+  

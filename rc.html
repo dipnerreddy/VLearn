@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Platform</title>
+    <link rel="stylesheet" href="enrollment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Bree+Serif&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section Sterts -->
+    <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <a href="#" class="logo"><img src="./CSI VIT LOGO.png" class="logo-img"></img> Ui Path Academy</a>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="index.html">Overview</a></li>                                
+                    <li><a  href="cc.html">Courses Curriculum</a></li>
+                    <li class="active"><a href="rc.html">related-courses</a></li>    
+                    <div class="box">
+                        <div class="login-btn" id="login-btn">
+                            <a href="#login">Login</a>
+                        </div>
+                    </div>                                  
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section Ends -->
+
+
+
+    
+    <section id="about-home">
+        <h2>Ui Data Service</h2>
+        <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
+        
+    </section>
+
+    <!-- Course Details -->
+    <section id="course-details">
+        <div class="overwiew">
+            <img class="course-img" src="./vid-banner2.jfif">
+            <img src="./play icon.jfif" alt="" class="play-btn" onclick="playVideo('./videoplayback.mp4')">
+            <div class="course-head">
+                <div class="c-name">
+                    <h2>Ui data Service Course</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
+                </div>
+                <span>$49.99</span>
+            </div>
+
+            <!-- Sliding bar through animation -->
+            <div class="slide">
+                <p>To access the course , click on </p>
+                <a class="btn"
+                href="#">Enroll-Now</a>
+            </div>
+            <div class="overview-2">
+                <!-- <img src="./overview-2.png" alt="" height="400px" width="1000px"> -->
+            </div>
+            <!-- <br> -->
+            <hr>
+            <br>
+            
+            <div class="brief">
+                <h3>Course Details</h3>
+                <h4>Audience:</h4>
+                <p>RPA Developers, Solution Architects</p>
+                <h4>Learning objectives</h4>
+                <p>At the end of this course, you should be able to:</p>
+                <p><i class="far fa-check-circle"></i>Explain the key concepts:Data Service, Entity, Entity Field, Relationship and Entity Record;</p>
+                <p><i class="far fa-check-circle"></i>Define Entities, Fields and Relationship in Data Service;</p>
+                <p><i class="far fa-check-circle"></i>Use Entities to structure data in your projects;</p>
+                <p><i class="far fa-check-circle"></i>Store data in new Entity Records in Data Services and query existing Records;</p>
+                <br>
+                <br>
+                
+                <h4>Agenda:</h4>
+                <p><i class="far fa-check-circle"></i>Creating Entities in Data Services</p>
+                <p><i class="far fa-check-circle"></i>Using Entities in Studio Projects</p>
+                <p><i class="far fa-check-circle"></i>Storing Value in Data Service</p>
+                <p><i class="far fa-check-circle"></i>Practice</p>
+            </div>
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./videoplayback.mp4" type="video/mp4">
+                </video> 
+                <img src="./close-button.jfif" class="close-btn" alt=""  onclick="stopVideo()">
+            </div>
+            
+        </div> 
+        
+        
+        <div class="enroll">
+            <h3>Ui Data Service Includes:</h3>
+            <hr>
+            <p><ion-icon name="download"></ion-icon>Downloadable Resources</p>
+            <p><ion-icon name="time"></ion-icon>Full Life-time access</p>
+            <p><ion-icon name="TV"></ion-icon>Access on mobile and TV</p>
+            <p><ion-icon name="code-working"></ion-icon>Assignments</p>
+            <p><ion-icon name="mail-unread"></ion-icon>Certificate after completion</p>
+            <div class="enroll-btn">
+                <a href="#" class="fas fa-ticket-alt blue">  Enroll Courses</a>
+
+                <div class="fav">
+                    <a href="#" class="fas fa-heart fav-btn">  Favourite</a>
+                </div>
+                <div class="share">
+                    <a href="#" class="fas fa-share">  Share</a>
+                    
+                </div>
+            </div>
+        </div>    
+
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Script.js" href=""></script>
+    
+</body>
+</html>
